@@ -10,6 +10,7 @@ var hcells = floor(room_width/64);
 global.grid = mp_grid_create(0,0, hcells, vcells, 64, 64);
 
 mp_grid_add_instances(global.grid, obj_wall ,false);
+mp_grid_add_instances(global.grid, obj_entity ,false);
 
 /*
 left	Starting x coordinate of the mp_grid in the room
