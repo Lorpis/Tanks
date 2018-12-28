@@ -56,7 +56,7 @@ turret_delta_angle += trn_turret*turret_spd;
 //set rang -> right thumbstick verticle sets barrel angle (range)
 var ur_bmpr = gamepad_button_check(device_num,gp_shoulderr);
 var lr_bmpr = -gamepad_button_check(device_num,gp_shoulderl);
-var mv_barrel =  rvaxis; 
+var mv_barrel =  -rvaxis; 
 
 //range limit check
 if(mv_barrel and vertical_deg <= barrel_angle_max){vertical_deg += mv_barrel*0.5;};
