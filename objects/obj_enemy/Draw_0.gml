@@ -2,5 +2,5 @@
 // You can write your code in this editor
 draw_self();
 scr_print_data("enemy",data_map, 20, 20);
-
+ds_map_clear(data_map);
 draw_circle_color(trg_x, trg_y, 10, c_green, c_yellow, false);
